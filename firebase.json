@@ -7,7 +7,7 @@
     "source": "functions"
   },
   "hosting": {
-    "public": "dist/bachelor-vince",
+    "public": "dist/bachelor_vince",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -3,21 +3,20 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bachelor-vince": {
+    "bachelor_vince": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bachelor-vince",
+            "outputPath": "dist/bachelor_vince",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bachelor-vince:build"
+            "browserTarget": "bachelor_vince:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bachelor-vince:build:production"
+              "browserTarget": "bachelor_vince:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bachelor-vince:build"
+            "browserTarget": "bachelor_vince:build"
           }
         },
         "test": {
@@ -106,7 +105,7 @@
         }
       }
     },
-    "bachelor-vince-e2e": {
+    "bachelor_vince-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bachelor-vince:serve"
+            "devServerTarget": "bachelor_vince:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bachelor-vince:serve:production"
+              "devServerTarget": "bachelor_vince:serve:production"
             }
           }
         },
@@ -135,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "bachelor-vince"
+  "defaultProject": "bachelor_vince"
 }
